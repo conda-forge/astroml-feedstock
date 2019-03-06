@@ -1,7 +1,7 @@
 {% set name = "astroML" %}
-{% set version = "0.3" %}
+{% set version = "0.4" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "ea6d0119593aed0e0dadc79c613ac0bddad95e6f12151237562a4fd67552b2b8" %}
+{% set hash_value = "a9a934ab5c3e2d285469cb4b42cb52a958399dfdd2fd363b76df3e98d147b744" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
