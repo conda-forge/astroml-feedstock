@@ -1,7 +1,7 @@
 {% set name = "astroML" %}
-{% set version = "0.4" %}
+{% set version = "0.4.post1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "a9a934ab5c3e2d285469cb4b42cb52a958399dfdd2fd363b76df3e98d147b744" %}
+{% set hash_value = "7fdb8cc7c39fcf1a9f42270669a6147925c9e426b2bed19851638f722d7bef57" %}
 
 package:
   name: '{{ name|lower }}'
