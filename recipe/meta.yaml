@@ -1,7 +1,7 @@
 {% set name = "astroML" %}
-{% set version = "0.4.post1" %}
+{% set version = "0.4.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "7fdb8cc7c39fcf1a9f42270669a6147925c9e426b2bed19851638f722d7bef57" %}
+{% set hash_value = "a4efa8acee889c92088ff2433d24793d24cfe7aba15d523e2e0cc12d81e4b899" %}
 
 package:
   name: '{{ name|lower }}'
@@ -15,7 +15,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -24,10 +24,10 @@ requirements:
   run:
     - python
     - numpy >=1.4
-    - scipy >=0.7
+    - scipy >=0.11
     - matplotlib >=0.99
-    - scikit-learn >=0.10
-    - astropy >=0.2.5
+    - scikit-learn >=0.18
+    - astropy >1.2
 
 test:
   imports:
