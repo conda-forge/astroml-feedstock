@@ -1,20 +1,18 @@
 {% set name = "astroML" %}
-{% set version = "0.4.1" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "a4efa8acee889c92088ff2433d24793d24cfe7aba15d523e2e0cc12d81e4b899" %}
+{% set version = "1.0.2" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: 8e10a86ec097a6d1afc3a1fb1a18036ee27c444aef4f286dea00d391e709b85a
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
