@@ -18,14 +18,15 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - setuptools
+    - python >=3.6
   run:
-    - python
-    - numpy >=1.4
-    - scipy >=0.11
-    - matplotlib-base >=0.99
+    - python >=3.6
+    - numpy >=1.13
+    - scipy >=0.18
+    - matplotlib-base >=3
     - scikit-learn >=0.18
-    - astropy >1.2
+    - astropy >3
 
 test:
   imports:
