@@ -3,7 +3,7 @@ About astroml
 
 Home: http://www.astroML.org/
 
-Package license: BSD 2-clause
+Package license: BSD-2-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/astroml-feedstock/blob/master/LICENSE.txt)
 
