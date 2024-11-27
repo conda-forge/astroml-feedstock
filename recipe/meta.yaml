@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -26,7 +26,7 @@ requirements:
     - scipy >=0.18
     - matplotlib-base >=3
     - scikit-learn >=0.18
-    - astropy >3
+    - astropy-base >3
 
 test:
   imports:
